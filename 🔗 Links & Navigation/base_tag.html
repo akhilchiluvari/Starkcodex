@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&lt;base&gt; - Base URL for Links</title>
+    <base href="https://example.com/" target="_blank">
+</head>
+
+<body>
+    <header>
+        <h1>&lt;base&gt; - Base URL for Links</h1>
+    </header>
+    <main>
+        <section>
+            <h2>🧠 What it does:</h2>
+            <ul>
+                <li>Sets a base URL for all relative URLs in a document.</li>
+                <li>Allows you to define a default <code>href</code> or <code>target</code> for links.</li>
+                <li>Only one <code>&lt;base&gt;</code> element can be used in a document.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>🕰️ When to use:</h2>
+            <ul>
+                <li>When you want all relative links to use the same base path.</li>
+                <li>If you want all links to open in a specific target (like <code>_blank</code>).</li>
+                <li>Useful when hosting content that may move between directories or domains.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>💻 Syntax:</h2>
+            <pre><code>&lt;head&gt;
+    &lt;base href="https://example.com/" target="_blank"&gt;
+    &lt;!-- Now all relative links use this base URL --&gt;
+&lt;/head&gt;</code></pre>
+        </section>
+        <section>
+            <h2>🔍 Output:</h2>
+            <p><em>No direct visible output</em>, but links like
+                <code>&lt;a href="about"&gt;About Us&lt;/a&gt;</code>
+                will point to <code>https://example.com/about</code>.
+            </p>
+        </section>
+    </main>
+    <nav>
+        <a href="../index.html">
+            <button style="padding: 1px 12px; font-size: 1em;">
+                <h4>← Back to Home</h4>
+            </button>
+        </a>
+    </nav>
+    <footer>
+        <hr>
+        <p>🚀 StarkCodex v1.0 by Akhil Chiluvari.</p>
+    </footer>
+</body>
+
+</html>

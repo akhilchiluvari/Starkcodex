@@ -18,6 +18,15 @@ button {
     background-color: #FFBBAF;
 }
 
+button:hover {
+    background-color: coral;
+}
+
+
+button:active {
+    background-color: gold;
+}
+
 th {
     background-color: #CFDD92;
 }
