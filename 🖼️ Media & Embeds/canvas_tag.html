@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&lt;canvas&gt; - Graphics Canvas</title>
+</head>
+
+<body>
+    <header>
+        <h1>&lt;canvas&gt; - Graphics Canvas</h1>
+    </header>
+    <main>
+        <section>
+            <h2>🧠 What it does:</h2>
+            <ul>
+                <li>Provides a resolution-dependent drawing surface for 2D graphics and animations.</li>
+                <li>It acts as a container for graphics, which are then drawn using a scripting language like
+                    JavaScript.</li>
+                <li>It is an HTML5 element that can be used to render graphs, game graphics, art, or other visual images
+                    on the fly.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>🕰️ When to use:</h2>
+            <ul>
+                <li>When you need to create dynamic and interactive content like games, charts, or photo compositions.
+                </li>
+                <li>To draw 2D shapes, text, or gradients directly on a web page using JavaScript.</li>
+                <li>For rendering graphics on the fly without using an image file.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>💻 Syntax:</h2>
+            <pre><code>&lt;canvas id="myCanvas" width="200" height="100"&gt;
+    Your browser does not support the HTML canvas tag.
+&lt;/canvas&gt;</code></pre>
+        </section>
+        <section>
+            <h2>🔍 Output:</h2>
+            <p>
+                <em>
+                    This is a simple JavaScript example that draws a rectangle on the canvas.
+                </em>
+            </p>
+            <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+            </canvas>
+            <script>
+                const canvas = document.getElementById("myCanvas");
+                const ctx = canvas.getContext("2d");
+                ctx.fillStyle = "#FF0000";
+                ctx.fillRect(0, 0, 150, 75);
+            </script>
+        </section>
+    </main>
+    <nav>
+        <a href="../index.html">
+            <button style="padding: 1px 12px; font-size: 1em;">
+                <h4>← Back to Home</h4>
+            </button>
+        </a>
+    </nav>
+    <footer>
+        <hr>
+        <p>🚀 StarkCodex v1.0 by Akhil Chiluvari.</p>
+    </footer>
+</body>
+
+</html>

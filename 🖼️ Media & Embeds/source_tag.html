@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&lt;source&gt; - Media Source</title>
+</head>
+
+<body>
+    <header>
+        <h1>&lt;source&gt; - Media Source</h1>
+    </header>
+    <main>
+        <section>
+            <h2>🧠 What it does:</h2>
+            <ul>
+                <li>Specifies multiple media resources for `<picture>`, `<audio>`, and `<video>` elements.</li>
+                <li>It is a self-closing (void) element, which means it has no content and does not require a closing
+                    tag.</li>
+                <li>Allows the browser to choose the most suitable file format from a list to ensure compatibility.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>🕰️ When to use:</h2>
+            <ul>
+                <li>When you want to provide the same media content in multiple formats for better browser
+                    compatibility.</li>
+                <li>To allow the browser to select the most suitable image for different screen sizes when used with the
+                    `<picture>` element.</li>
+                <li>To specify alternative audio or video files.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>💻 Syntax:</h2>
+            <pre><code>&lt;audio controls&gt;
+    &lt;source src="horse.ogg" type="audio/ogg"&gt;
+    &lt;source src="horse.mp3" type="audio/mpeg"&gt;
+    Your browser does not support the audio tag.
+&lt;/audio&gt;</code></pre>
+        </section>
+        <section>
+            <h2>🔍 Output:</h2>
+            <p>
+                <em>
+                    No direct visual output on its own; it works in conjunction with its parent
+                    `<audio>`, `<video>`, or `<picture>` element.
+                </em>
+            </p>
+            <audio controls>
+                <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+                <source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+    </main>
+    <nav>
+        <a href="../index.html">
+            <button style="padding: 1px 12px; font-size: 1em;">
+                <h4>← Back to Home</h4>
+            </button>
+        </a>
+    </nav>
+    <footer>
+        <hr>
+        <p>🚀 StarkCodex v1.0 by Akhil Chiluvari.</p>
+    </footer>
+</body>
+
+</html>

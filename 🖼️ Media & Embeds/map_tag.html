@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&lt;map&gt; - Image Map</title>
+</head>
+
+<body>
+    <header>
+        <h1>&lt;map&gt; - Image Map</h1>
+    </header>
+    <main>
+        <section>
+            <h2>🧠 What it does:</h2>
+            <ul>
+                <li>Defines an image map with clickable areas.</li>
+                <li>It is used in conjunction with the `&lt;area&gt;` tag to create interactive regions on an image.
+                </li>
+                <li>It is referenced by the `usemap` attribute of an `&lt;img&gt;` tag to link the map to an image.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>🕰️ When to use:</h2>
+            <ul>
+                <li>To create a single image with multiple interactive regions.</li>
+                <li>When you need to define a graphical navigation interface on an image, such as a geographical map or
+                    an infographic.</li>
+                <li>To make an image interactive by providing clickable areas without needing a separate button for each
+                    link.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>💻 Syntax:</h2>
+            <pre><code>&lt;img src="planets.jpg" alt="Planets" usemap="#planetmap"&gt;
+&lt;map name="planetmap"&gt;
+  &lt;!-- Area tags go here --&gt;
+&lt;/map&gt;</code></pre>
+        </section>
+        <section>
+            <h2>🔍 Output:</h2>
+            <p>
+                <em>
+                    The `&lt;map&gt;` tag itself has no direct visual output. It provides the structure for the
+                    clickable areas defined by the `&lt;area&gt;` tags.
+                </em>
+            </p>
+            <p>
+                The `name` attribute of the `&lt;map&gt;` element must match the `usemap` attribute of the `&lt;img&gt;`
+                element for the link to work.
+            </p>
+        </section>
+    </main>
+    <nav>
+        <a href="../index.html">
+            <button style="padding: 1px 12px; font-size: 1em;">
+                <h4>← Back to Home</h4>
+            </button>
+        </a>
+    </nav>
+    <footer>
+        <hr>
+        <p>🚀 StarkCodex v1.0 by Akhil Chiluvari.</p>
+    </footer>
+</body>
+
+</html>

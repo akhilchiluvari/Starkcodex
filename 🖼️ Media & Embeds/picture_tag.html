@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&lt;picture&gt; - Responsive Images</title>
+</head>
+
+<body>
+    <header>
+        <h1>&lt;picture&gt; - Responsive Images</h1>
+    </header>
+    <main>
+        <section>
+            <h2>🧠 What it does:</h2>
+            <ul>
+                <li>Contains zero or more `&lt;source&gt;` elements and one `&lt;img&gt;` element to offer alternative
+                    image versions for different display scenarios.</li>
+                <li>The browser will choose the best match among the `&lt;source&gt;` elements based on screen size,
+                    pixel density, or image format.</li>
+                <li>Provides a fallback image in the `&lt;img&gt;` tag for browsers that do not support the
+                    `&lt;picture&gt;` element or if no other source matches.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>🕰️ When to use:</h2>
+            <ul>
+                <li>For responsive designs where you need to display different images on different devices or screen
+                    sizes.</li>
+                <li>When you need to use newer image formats like AVIF or WebP while providing a fallback for browsers
+                    that don't support them.</li>
+                <li>To "art-direct" an image, which means showing a cropped or modified version of an image to better
+                    fit a specific layout.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>💻 Syntax:</h2>
+            <pre><code>&lt;picture&gt;
+    &lt;source media="(min-width: 650px)" srcset="../assets/img_wide.jpg"&gt;
+    &lt;source media="(min-width: 465px)" srcset="../assets/img_medium.jpg"&gt;
+    &lt;img src="../assets/img_small.jpg" alt="A plate of food." style="width:auto;"&gt;
+&lt;/picture&gt;</code></pre>
+        </section>
+        <section>
+            <h2>🔍 Output:</h2>
+            <p>
+                <em>
+                    Resize your browser window to see the image change based on the viewport width.
+                    <br>
+                    (Requires three local images: `img_wide.jpg`, `img_medium.jpg`, and `img_small.jpg` in an `assets`
+                    folder one level up.)
+                </em>
+            </p>
+            <picture>
+                <source media="(min-width: 650px)" srcset="../assets/img_wide.jpeg">
+                <source media="(min-width: 465px)" srcset="../assets/img_medium.jpeg">
+                <img src="../assets/img_small.jpeg" alt="A placeholder image that changes based on screen width.">
+            </picture>
+        </section>
+    </main>
+    <nav>
+        <a href="../index.html">
+            <button style="padding: 1px 12px; font-size: 1em;">
+                <h4>← Back to Home</h4>
+            </button>
+        </a>
+    </nav>
+    <footer>
+        <hr>
+        <p>🚀 StarkCodex v1.0 by Akhil Chiluvari.</p>
+    </footer>
+</body>
+
+</html>

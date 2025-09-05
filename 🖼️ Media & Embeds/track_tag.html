@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&lt;track&gt; - Text Tracks</title>
+</head>
+
+<body>
+    <header>
+        <h1>&lt;track&gt; - Text Tracks</h1>
+    </header>
+    <main>
+        <section>
+            <h2>🧠 What it does:</h2>
+            <ul>
+                <li>Adds timed text tracks to <code>&lt;video&gt;</code> and <code>&lt;audio&gt;</code> elements.</li>
+                <li>Commonly used to add subtitles, captions, descriptions, chapters, or metadata.</li>
+                <li>It is a self-closing (void) element, which means it has no closing tag.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>🕰️ When to use:</h2>
+            <ul>
+                <li>To provide subtitles for video content.</li>
+                <li>To add closed captions for users who are deaf or when the sound is muted.</li>
+                <li>To enhance accessibility by providing a transcription or translation of dialogue and other relevant
+                    audio information.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>💻 Syntax:</h2>
+            <pre><code>&lt;video controls&gt;
+    &lt;source src="video.mp4" type="video/mp4"&gt;
+    &lt;track src="subtitles_en.vtt" kind="subtitles" srclang="en" label="English"&gt;
+&lt;/video&gt;</code></pre>
+        </section>
+        <section>
+            <h2>🔍 Output:</h2>
+            <video width="320" height="240" controls>
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                <track src="https://www.w3schools.com/html/subtitles_en.vtt" kind="subtitles" srclang="en"
+                    label="English">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+    </main>
+    <nav>
+        <a href="../index.html">
+            <button style="padding: 1px 12px; font-size: 1em;">
+                <h4>← Back to Home</h4>
+            </button>
+        </a>
+    </nav>
+    <footer>
+        <hr>
+        <p>🚀 StarkCodex v1.0 by Akhil Chiluvari.</p>
+    </footer>
+</body>
+
+</html>
